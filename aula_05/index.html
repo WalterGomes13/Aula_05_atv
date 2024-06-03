@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Atividade 2
+        /*let num = [1,2,3,4,5]
+         for (let ativ of num){
+            console.log(ativ)
+         }*/
+
+         //Atividade 3
+         let resp = []
+         let contador = 0
+         var p1 = prompt("1 - Telefonou para a vítima?")
+         var p2 = prompt("2 - Esteve no local do crime?")
+         var p3 = prompt("3 - Mora perto da vítima?")
+         var p4 = prompt("4 - Devia para a vítima? ")
+         var p5 = prompt("5 - Já trabalhou com a vítima?")
+
+         resp.push(p1, p2, p3, p4, p5)
+        
+         for(let cont of resp){
+            if(cont == "S"|| cont == "s"){
+                contador+=1
+            }
+         }
+
+         if (contador == 2){
+            console.log("A pessoa é suspeita")
+         }
+         else if(contador == 3 || contador == 4){
+            console.log("A pessoa é Cúmplice")
+         }
+         else if(contador == 5){
+            console.log("A pessoa é o Assassino")
+         }
+         else{
+            console.log("A pessoa é inocente")
+         }
+    </script>
+</body>
+</html>
